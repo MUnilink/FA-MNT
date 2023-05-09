@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628682938093" licenseType="Commercial" modified="Fri Apr 29 10:15:09 BRT 2022" modifiedBy="Usuário" name="roda_todos" revision="1.125" showComponentDetails="true">
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628682938093" licenseType="Commercial" modified="Tue May 09 08:59:39 BRT 2023" modifiedBy="Manoel" name="roda_todos" revision="1.127" showComponentDetails="true">
 <Global>
 <Property fileURL="workspace.prm" id="GraphParameter0"/>
 <Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="242" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="8" title="Geral" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="10" width="191" x="81" y="112">
@@ -22,9 +22,9 @@ xxx_x: pode referenciar qualquer tabela do sistema xxx]]></attr>
 </Phase>
 <Phase number="2">
 <Node enabled="enabled" graphName="${GRAPH_DIR}/roda_combustivel.grf" guiName="Combustível" guiX="621" guiY="318" id="COMBUSTIVEL" type="RUN_GRAPH"/>
-<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_documentos.grf" guiName="Documentos e taxas" guiX="356" guiY="318" id="DOCUMENTOS_E_TAXAS" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/roda_documentos.grf" guiName="Documentos e taxas" guiX="356" guiY="318" id="DOCUMENTOS_E_TAXAS" type="RUN_GRAPH"/>
 <Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_geral.grf" guiName="Geral manutenção" guiX="362" guiY="134" id="GERAL_MANUTENCAO" type="RUN_GRAPH"/>
-<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_aquisdeprec.grf" guiName="Roda custos ativo" guiX="113" guiY="534" id="RODA_CUSTOS_ATIVO" type="RUN_GRAPH"/>
+<Node enabled="disabled" graphName="${GRAPH_DIR}/roda_aquisdeprec.grf" guiName="Roda custos ativo" guiX="113" guiY="534" id="RODA_CUSTOS_ATIVO" type="RUN_GRAPH"/>
 </Phase>
 <Phase number="8">
 <Node enabled="enabled" graphName="${GRAPH_DIR}/roda_pneu.grf" guiName="Pneu" guiX="748" guiY="410" id="PNEU" type="RUN_GRAPH"/>
