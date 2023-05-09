@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Mon Sep 27 08:28:11 BRT 2021" guiVersion="3.4.4.P" id="1632752465803" licenseType="Commercial" modified="Mon Sep 27 11:22:10 BRT 2021" modifiedBy="Usuário" name="roda_documentos" revision="1.1" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_dim_documentos.grf" guiName="Roda dim documentos" guiX="266" guiY="158" id="RODA_DIM_DOCUMENTOS" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_fct_documentos.grf" guiName="Roda fct documentos" guiX="419" guiY="250" id="RODA_FCT_DOCUMENTOS" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

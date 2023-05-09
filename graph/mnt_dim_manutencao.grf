@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Thu Aug 05 08:59:12 BRT 2021" guiVersion="3.4.4.P" id="1628186443354" licenseType="Commercial" modified="Sat Dec 11 10:59:46 BRST 2021" modifiedBy="Usuário" name="insumo" revision="1.45" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Bem" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="T9_CODBEM" type="string"/>
+<Field delimiter="," name="T9_FABRICA" type="string"/>
+<Field delimiter="," name="T9_NOME" type="string"/>
+<Field delimiter="," name="T9_CCUSTO" type="string"/>
+<Field delimiter="," name="T9_MODELO" type="string"/>
+<Field delimiter="," name="T9_DTCOMPR" type="string"/>
+<Field delimiter="," name="T9_PLACA" type="string"/>
+<Field delimiter="\n" name="T9_NFCOMPR" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Ccusto" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="CTT_CUSTO" type="string"/>
+<Field delimiter="\n" name="CTT_DESC01" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Especialidade" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="T0_ESPECIA" type="string"/>
+<Field delimiter="\n" name="T0_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata17" previewAttachment="${DATA_SOURCE_DIR}/especialidade.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="especialidade.csv" name="especialidade_csv" previewAttachment="${DATA_SOURCE_DIR}/especialidade.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T0_ESPECIA" type="string"/>
+<Field eofAsDelimiter="false" name="T0_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata10">
+<Record fieldDelimiter="," name="Fabricante" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="T7_FABRICA" type="string"/>
+<Field delimiter="\n" name="T7_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata11">
+<Record fieldDelimiter="," name="Familia" recordDelimiter="\r\n" type="delimited">
+<Field name="T6_CODFAMI" type="string"/>
+<Field delimiter="\n" name="T6_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4">
+<Record fieldDelimiter="," name="Ferramenta" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="H4_CODIGO" type="string"/>
+<Field delimiter="\n" name="H4_DESCRI" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata12" previewAttachment="${DATA_SOURCE_DIR}/ferramenta.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="ferramenta.csv" name="ferramenta_csv" previewAttachment="${DATA_SOURCE_DIR}/ferramenta.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="H4_CODIGO" type="string"/>
+<Field eofAsDelimiter="false" name="H4_DESCRI" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata16" previewAttachment="${DATA_SOURCE_DIR}/ferramenta.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="ferramenta.csv" name="ferramenta_csv" previewAttachment="${DATA_SOURCE_DIR}/ferramenta.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T0_ESPECIA" type="string"/>
+<Field eofAsDelimiter="false" name="T0_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5">
+<Record fieldDelimiter="," name="Fornecedor" recordDelimiter="\r\n" type="delimited">
+<Field name="A2_COD" type="string"/>
+<Field name="A2_LOJA" type="string"/>
+<Field delimiter="\n" name="A2_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata13" previewAttachment="${DATA_SOURCE_DIR}/funcionariomnt.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="funcionariomnt.csv" name="funcionariomnt_csv" previewAttachment="${DATA_SOURCE_DIR}/funcionariomnt.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T1_CODFUNC" type="string"/>
+<Field eofAsDelimiter="false" name="T1_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata6" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Grupoestoque" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="BM_GRUPO" type="string"/>
+<Field delimiter="," name="BM_DESC" type="string"/>
+<Field delimiter="," name="BM_YDEGRUP" type="string"/>
+<Field delimiter="\n" name="BM_YDESUBG" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="|" name="INSUMO" recordDelimiter="\r\n" type="delimited">
+<Field name="field1" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata7" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Modelo" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field name="TQR_TIPMOD" type="string"/>
+<Field delimiter="\n" name="TQR_DESMOD" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata8" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Plano" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="TI_PLANO" type="string"/>
+<Field delimiter="\n" name="TI_DESCRIC" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata14" previewAttachment="${DATA_SOURCE_DIR}/plano.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="plano.csv" name="plano_csv" previewAttachment="${DATA_SOURCE_DIR}/plano.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TI_PLANO" type="string"/>
+<Field eofAsDelimiter="false" name="TI_DESCRIC" type="string"/>
+<Field name="TIPO_PLANO" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata18" previewAttachment="${DATA_SOURCE_DIR}/servicomnt.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="servicomnt.csv" name="servicomnt_csv" previewAttachment="${DATA_SOURCE_DIR}/servicomnt.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T4_SERVICO" type="string"/>
+<Field eofAsDelimiter="false" name="T4_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata19" previewAttachment="${DATA_SOURCE_DIR}/servicomnt.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="servicomnt.csv" name="servicomnt_csv" previewAttachment="${DATA_SOURCE_DIR}/servicomnt.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T4_SERVICO" type="string"/>
+<Field eofAsDelimiter="false" name="T4_NOME" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata9">
+<Record fieldDelimiter="," name="Tarefa" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="T5_TAREFA" type="string"/>
+<Field delimiter="," name="T5_DESCRIC" type="string"/>
+<Field delimiter="\n" name="T5_SERVICO" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata15" previewAttachment="${DATA_SOURCE_DIR}/tarefa.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="tarefa.csv" name="tarefa_csv" previewAttachment="${DATA_SOURCE_DIR}/tarefa.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="T5_TAREFA" type="string"/>
+<Field name="T5_DESCRIC" type="string"/>
+<Field eofAsDelimiter="false" name="T5_SERVICO" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="disabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#ccusto.csv*" guiName="Centro de custo" guiX="70" guiY="55" id="CENTRO_DE_CUSTO1" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#especialidade.csv*" guiName="Especialidade" guiX="70" guiY="158" id="ESPECIALIDADE" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#ferramenta.csv*" guiName="Ferramenta" guiX="70" guiY="262" id="FERRAMENTA" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#funcionariomnt.csv*" guiName="Funcionário" guiX="70" guiY="366" id="FUNCIONARIO" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#plano.csv*" guiName="Plano" guiX="70" guiY="469" id="PLANO" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#servicomnt.csv*" guiName="Serviço" guiX="732" guiY="55" id="SERVICO" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#tarefa.csv*" guiName="Tarefa" guiX="69" guiY="571" id="TAREFA2" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="CENTRO_DE_CUSTO1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata2" outPort="Port 0 (output)" toNode="CENTRO_DE_CUSTO:0"/>
+<Edge debugMode="true" fromNode="ESPECIALIDADE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge3" inPort="Port 0 (in)" metadata="Metadata17" outPort="Port 0 (output)" toNode="ESPECIALIDADE1:0"/>
+<Edge debugMode="true" fromNode="FERRAMENTA:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata12" outPort="Port 0 (output)" toNode="FERRAMENTA1:0"/>
+<Edge debugMode="true" fromNode="FUNCIONARIO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata13" outPort="Port 0 (output)" toNode="FUNCIONARIO1:0"/>
+<Edge debugMode="true" fromNode="PLANO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge5" inPort="Port 0 (in)" metadata="Metadata14" outPort="Port 0 (output)" toNode="PLANO1:0"/>
+<Edge debugMode="true" fromNode="SERVICO:0" guiBendpoints="" guiRouter="Manhattan" id="Edge4" inPort="Port 0 (in)" metadata="Metadata19" outPort="Port 0 (output)" toNode="SERVICO1:0"/>
+<Edge debugMode="true" fromNode="TAREFA2:0" guiBendpoints="" guiRouter="Manhattan" id="Edge7" inPort="Port 0 (in)" metadata="Metadata15" outPort="Port 0 (output)" toNode="TAREFA3:0"/>
+</Phase>
+<Phase number="1">
+<Node enabled="disabled" guiName="Centro de custo" guiX="351" guiY="55" id="CENTRO_DE_CUSTO" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.especialidades" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.especialidades&quot;,&quot;datasetTitle&quot;:&quot;Especialidades&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.especialidades.descricaodaespecialidade&quot;,&quot;title&quot;:&quot;Descrição da especialidade&quot;,&quot;prettyId&quot;:&quot;attr_especialidades_descricaodaespecialidade&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.especialidades.descricaodaespecialidade&quot;,&quot;title&quot;:&quot;Descrição da especialidade&quot;,&quot;prettyId&quot;:&quot;descricaodaespecialidade&quot;,&quot;assignedMetadataField&quot;:&quot;T0_NOME&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.especialidades.iddaespecialidade&quot;,&quot;title&quot;:&quot;ID da especialidade&quot;,&quot;prettyId&quot;:&quot;attr_especialidades_iddaespecialidade&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.especialidades.iddaespecialidade&quot;,&quot;title&quot;:&quot;ID da especialidade&quot;,&quot;prettyId&quot;:&quot;iddaespecialidade&quot;,&quot;assignedMetadataField&quot;:&quot;T0_ESPECIA&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[]}}" enabled="enabled" guiName="Especialidade" guiX="351" guiY="158" id="ESPECIALIDADE1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.ferramentas" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.ferramentas&quot;,&quot;datasetTitle&quot;:&quot;Ferramentas&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.ferramentas.descricaodaferramenta&quot;,&quot;title&quot;:&quot;Descrição da ferramenta&quot;,&quot;prettyId&quot;:&quot;attr_ferramentas_descricaodaferramenta&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.ferramentas.descricaodaferramenta&quot;,&quot;title&quot;:&quot;Descrição da ferramenta&quot;,&quot;prettyId&quot;:&quot;descricaodaferramenta&quot;,&quot;assignedMetadataField&quot;:&quot;H4_DESCRI&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.ferramentas.iddaferramenta&quot;,&quot;title&quot;:&quot;ID da ferramenta&quot;,&quot;prettyId&quot;:&quot;attr_ferramentas_iddaferramenta&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.ferramentas.iddaferramenta&quot;,&quot;title&quot;:&quot;ID da ferramenta&quot;,&quot;prettyId&quot;:&quot;iddaferramenta&quot;,&quot;assignedMetadataField&quot;:&quot;H4_CODIGO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Ferramenta" guiX="351" guiY="262" id="FERRAMENTA1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.funcionariosdamanutencao" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.funcionariosdamanutencao&quot;,&quot;datasetTitle&quot;:&quot;Funcionários da manutenção&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.funcionariosdamanutencao.matricula&quot;,&quot;title&quot;:&quot;Matrícula&quot;,&quot;prettyId&quot;:&quot;attr_funcionariosdamanutencao_matricula&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.funcionariosdamanutencao.matricula&quot;,&quot;title&quot;:&quot;Matrícula&quot;,&quot;prettyId&quot;:&quot;matricula&quot;,&quot;assignedMetadataField&quot;:&quot;T1_CODFUNC&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.funcionariosdamanutencao.nome&quot;,&quot;title&quot;:&quot;Nome&quot;,&quot;prettyId&quot;:&quot;attr_funcionariosdamanutencao_nome&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.funcionariosdamanutencao.nome&quot;,&quot;title&quot;:&quot;Nome&quot;,&quot;prettyId&quot;:&quot;nome&quot;,&quot;assignedMetadataField&quot;:&quot;T1_NOME&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.funcionariosdamanutencao.nome&quot;,&quot;title&quot;:&quot;Nome&quot;,&quot;prettyId&quot;:&quot;nome&quot;,&quot;assignedMetadataField&quot;:&quot;T1_NOME&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Funcionário" guiX="351" guiY="366" id="FUNCIONARIO1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.planodemanutencao" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.planodemanutencao&quot;,&quot;datasetTitle&quot;:&quot;Plano de manutenção&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.planodemanutencao.descricaodoplao&quot;,&quot;title&quot;:&quot;Descrição do plano&quot;,&quot;prettyId&quot;:&quot;attr_planodemanutencao_descricaodoplao&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.planodemanutencao.descricaodoplao&quot;,&quot;title&quot;:&quot;Descrição do plano&quot;,&quot;prettyId&quot;:&quot;descricaodoplao&quot;,&quot;assignedMetadataField&quot;:&quot;TI_DESCRIC&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.planodemanutencao.iddoplano&quot;,&quot;title&quot;:&quot;ID do plano&quot;,&quot;prettyId&quot;:&quot;attr_planodemanutencao_iddoplano&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.planodemanutencao.iddoplano&quot;,&quot;title&quot;:&quot;ID do plano&quot;,&quot;prettyId&quot;:&quot;iddoplano&quot;,&quot;assignedMetadataField&quot;:&quot;TI_PLANO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.planodemanutencao.tipodeplano&quot;,&quot;title&quot;:&quot;Tipo de plano&quot;,&quot;prettyId&quot;:&quot;attr_planodemanutencao_tipodeplano&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.planodemanutencao.tipodeplano&quot;,&quot;title&quot;:&quot;Tipo de plano&quot;,&quot;prettyId&quot;:&quot;tipodeplano&quot;,&quot;assignedMetadataField&quot;:&quot;TIPO_PLANO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Plano" guiX="351" guiY="469" id="PLANO1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.servicos" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.servicos&quot;,&quot;datasetTitle&quot;:&quot;Serviços de manutenção&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.servicos.descricaodoservico&quot;,&quot;title&quot;:&quot;Descrição do serviço&quot;,&quot;prettyId&quot;:&quot;attr_servicos_descricaodoservico&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.servicos.descricaodoservico&quot;,&quot;title&quot;:&quot;Descrição do serviço&quot;,&quot;prettyId&quot;:&quot;descricaodoservico&quot;,&quot;assignedMetadataField&quot;:&quot;T4_NOME&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.servicos.iddoservico&quot;,&quot;title&quot;:&quot;ID do serviço&quot;,&quot;prettyId&quot;:&quot;attr_servicos_iddoservico&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.servicos.iddoservico&quot;,&quot;title&quot;:&quot;ID do serviço&quot;,&quot;prettyId&quot;:&quot;iddoservico&quot;,&quot;assignedMetadataField&quot;:&quot;T4_SERVICO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Serviço" guiX="1013" guiY="55" id="SERVICO1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.tarefa" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.tarefa&quot;,&quot;datasetTitle&quot;:&quot;Tarefa&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.tarefa.descricaodatarefa&quot;,&quot;title&quot;:&quot;Descrição da tarefa&quot;,&quot;prettyId&quot;:&quot;attr_tarefa_descricaodatarefa&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.tarefa.descricaodatarefa&quot;,&quot;title&quot;:&quot;Descrição da tarefa&quot;,&quot;prettyId&quot;:&quot;descricaodatarefa&quot;,&quot;assignedMetadataField&quot;:&quot;T5_DESCRIC&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.tarefa.iddatarefa&quot;,&quot;title&quot;:&quot;ID da tarefa&quot;,&quot;prettyId&quot;:&quot;attr_tarefa_iddatarefa&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.tarefa.iddatarefa&quot;,&quot;title&quot;:&quot;ID da tarefa&quot;,&quot;prettyId&quot;:&quot;iddatarefa&quot;,&quot;assignedMetadataField&quot;:&quot;T5_TAREFA&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.tarefa.servico&quot;,&quot;title&quot;:&quot;Serviço&quot;,&quot;prettyId&quot;:&quot;attr_tarefa_servico&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.tarefa.servico&quot;,&quot;title&quot;:&quot;Serviço&quot;,&quot;prettyId&quot;:&quot;servico&quot;,&quot;assignedMetadataField&quot;:&quot;T5_SERVICO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.tarefa.servico&quot;,&quot;title&quot;:&quot;Serviço&quot;,&quot;prettyId&quot;:&quot;servico&quot;,&quot;assignedMetadataField&quot;:&quot;T5_SERVICO&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Tarefa" guiX="350" guiY="571" id="TAREFA3" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+</Phase>
+</Graph>

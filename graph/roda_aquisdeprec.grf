@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Sep 21 16:09:51 BRT 2021" guiVersion="3.4.4.P" id="1632502734252" licenseType="Commercial" modified="Mon Sep 27 11:24:33 BRT 2021" modifiedBy="Usuário" name="roda_documentos" revision="1.7" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/pat_dim_aquisdeprec.grf" guiName="Dim aquisição e depreciação" guiX="257" guiY="161" id="DIM_AQUISICAO_E_DEPRECIACAO" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/pat_fct_aquisdeprec.grf" guiName="Fato aquisição e depreciação" guiX="442" guiY="253" id="FATO_AQUISICAO_E_DEPRECIACAO" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

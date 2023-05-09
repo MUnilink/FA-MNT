@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 17 08:15:08 BRT 2021" guiVersion="3.4.4.P" id="1629220326619" licenseType="Commercial" modified="Tue Aug 17 14:15:01 BRT 2021" modifiedBy="Usuário" name="roda_pneu" revision="1.3" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_dim_pneu.grf" guiName="Roda dim pneu" guiX="172" guiY="144" id="RODA_DIM_PNEU" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_fct_pneu.grf" guiName="Roda fct pneu" guiX="299" guiY="236" id="RODA_FCT_PNEU" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

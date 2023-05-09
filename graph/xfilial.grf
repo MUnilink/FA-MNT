@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 17 08:15:08 BRT 2021" guiVersion="3.4.4.P" id="1629314096392" licenseType="Commercial" modified="Mon Oct 18 12:53:05 BRST 2021" modifiedBy="Usuário" name="xfilial" revision="1.6" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata1" previewAttachment="${DATA_SOURCE_DIR}/filial.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="filial.csv" name="filial_csv" previewAttachment="${DATA_SOURCE_DIR}/filial.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="BK_FILIAL" type="string"/>
+<Field name="COD_FILIAL" type="string"/>
+<Field name="DESC_FILIAL" type="string"/>
+<Field name="COD_UNINEG" type="string"/>
+<Field eofAsDelimiter="false" name="DESC_UNINEG" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0" previewAttachment="${DATA_SOURCE_DIR}/filial.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="filial.csv" name="filial_csv" previewAttachment="${DATA_SOURCE_DIR}/filial.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="COD_FILIAL" type="string"/>
+<Field name="DESC_FILIAL" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#filiais.csv*" guiName="Filial" guiX="193" guiY="118" id="FILIAL" type="DATA_READER"/>
+<Node dataset="dataset.filial" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.filial&quot;,&quot;datasetTitle&quot;:&quot;Filial&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.filial.codigodafilial&quot;,&quot;title&quot;:&quot;ID da filial&quot;,&quot;prettyId&quot;:&quot;attr_filial_codigodafilial&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.filial.codigodafilial&quot;,&quot;title&quot;:&quot;ID da filial&quot;,&quot;prettyId&quot;:&quot;codigodafilial&quot;,&quot;assignedMetadataField&quot;:&quot;COD_FILIAL&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.filial.filial&quot;,&quot;title&quot;:&quot;Descrição da filial&quot;,&quot;prettyId&quot;:&quot;attr_filial_filial&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.filial.filial&quot;,&quot;title&quot;:&quot;Descrição da filial&quot;,&quot;prettyId&quot;:&quot;filial&quot;,&quot;assignedMetadataField&quot;:&quot;DESC_FILIAL&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.filial.filial&quot;,&quot;title&quot;:&quot;Descrição da filial&quot;,&quot;prettyId&quot;:&quot;filial&quot;,&quot;assignedMetadataField&quot;:&quot;DESC_FILIAL&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="Filial" guiX="588" guiY="118" id="FILIAL1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="FILIAL:0" guiBendpoints="" guiRouter="Manhattan" id="Edge0" inPort="Port 0 (in)" metadata="Metadata0" outPort="Port 0 (output)" toNode="FILIAL1:0"/>
+</Phase>
+</Graph>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628779347339" licenseType="Commercial" modified="Fri Aug 20 13:17:56 BRT 2021" modifiedBy="Usuário" name="mnt_dim_pneu" revision="1.12" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata3" previewAttachment="${DATA_SOURCE_DIR}/analise.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="analise.csv" name="analise_csv" previewAttachment="${DATA_SOURCE_DIR}/analise.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TR4_PAREC" type="string"/>
+<Field name="TR4_NUMANA" type="string"/>
+<Field format="yyyyMMdd" name="TR4_DTANAL" type="date"/>
+<Field eofAsDelimiter="false" format="HH:mm" name="TR4_HRANAL" type="date"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4" previewAttachment="${DATA_SOURCE_DIR}/analise.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="analise.csv" name="analise_csv" previewAttachment="${DATA_SOURCE_DIR}/analise.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TR4_PAREC" type="string"/>
+<Field name="TR4_NUMANA" type="string"/>
+<Field format="yyyyMMdd" name="TR4_DTANAL" type="date"/>
+<Field eofAsDelimiter="false" format="HH:mm" name="TR4_HRANAL" type="date"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata0">
+<Record fieldDelimiter="," name="Medida" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="TQT_MEDIDA" type="string"/>
+<Field delimiter="\n" name="TQT_DESMED" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachment="${DATA_SOURCE_DIR}/medida.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="medida.csv" name="medida_csv" previewAttachment="${DATA_SOURCE_DIR}/medida.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TQT_MEDIDA" type="string"/>
+<Field eofAsDelimiter="false" name="TQT_DESMED" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachment="${DATA_SOURCE_DIR}/medida.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="medida.csv" name="medida_csv" previewAttachment="${DATA_SOURCE_DIR}/medida.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TR4_PAREC" type="string"/>
+<Field eofAsDelimiter="false" name="TR4_NUMANA" type="string"/>
+<Field name="TR4_DTANAL" type="string"/>
+<Field name="TR4_HRANAL" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#analise.csv*" guiName="Análise" guiX="93" guiY="198" id="ANALISE" type="DATA_READER"/>
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#medida.csv*" guiName="Medida" guiX="93" guiY="95" id="MEDIDA1" type="DATA_READER"/>
+<Edge debugMode="true" fromNode="ANALISE:0" guiBendpoints="" guiRouter="Manhattan" id="Edge2" inPort="Port 0 (in)" metadata="Metadata4" outPort="Port 0 (output)" toNode="ANALISE1:0"/>
+<Edge debugMode="true" fromNode="MEDIDA1:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata1" outPort="Port 0 (output)" toNode="MEDIDA:0"/>
+</Phase>
+<Phase number="1">
+<Node dataset="dataset.analisepneu" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.analisepneu&quot;,&quot;datasetTitle&quot;:&quot;Análise do pneu&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.analisepneu.horadaanalise&quot;,&quot;title&quot;:&quot;Hora da análise&quot;,&quot;prettyId&quot;:&quot;attr_analisepneu_horadaanalise&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.analisepneu.horadaanalise&quot;,&quot;title&quot;:&quot;Hora da análise&quot;,&quot;prettyId&quot;:&quot;horadaanalise&quot;,&quot;assignedMetadataField&quot;:&quot;TR4_HRANAL&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.dimensao.descricaodadimensao1&quot;,&quot;title&quot;:&quot;Descrição da análise&quot;,&quot;prettyId&quot;:&quot;attr_dimensao_descricaodadimensao1&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.dimensao.descricaodadimensao1&quot;,&quot;title&quot;:&quot;Descrição da análise&quot;,&quot;prettyId&quot;:&quot;descricaodadimensao1&quot;,&quot;assignedMetadataField&quot;:&quot;TR4_PAREC&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.dimensao.iddadimensao1&quot;,&quot;title&quot;:&quot;ID da análise&quot;,&quot;prettyId&quot;:&quot;attr_dimensao_iddadimensao1&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.dimensao.iddadimensao1&quot;,&quot;title&quot;:&quot;ID da análise&quot;,&quot;prettyId&quot;:&quot;iddadimensao1&quot;,&quot;assignedMetadataField&quot;:&quot;TR4_NUMANA&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;dataanalise.date&quot;,&quot;title&quot;:&quot;Date (Data análise)&quot;,&quot;prettyId&quot;:&quot;dataanalise&quot;,&quot;assignedMetadataField&quot;:&quot;TR4_DTANAL&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;dataanalise.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data análise)&quot;,&quot;prettyId&quot;:&quot;dataanalise_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;dataanalise.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data análise)&quot;,&quot;prettyId&quot;:&quot;dataanalise_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;datesWithFactConflict&quot;:[]}}" enabled="enabled" guiName="Análise" guiX="428" guiY="198" id="ANALISE1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Node dataset="dataset.dimensao" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.dimensao&quot;,&quot;datasetTitle&quot;:&quot;Dimensão do pneu&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.dimensao.descricaodadimensao&quot;,&quot;title&quot;:&quot;Descrição da dimensão&quot;,&quot;prettyId&quot;:&quot;attr_dimensao_descricaodadimensao&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.dimensao.descricaodadimensao&quot;,&quot;title&quot;:&quot;Descrição da dimensão&quot;,&quot;prettyId&quot;:&quot;descricaodadimensao&quot;,&quot;assignedMetadataField&quot;:&quot;TQT_DESMED&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.dimensao.iddadimensao&quot;,&quot;title&quot;:&quot;ID da dimensão&quot;,&quot;prettyId&quot;:&quot;attr_dimensao_iddadimensao&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.dimensao.iddadimensao&quot;,&quot;title&quot;:&quot;ID da dimensão&quot;,&quot;prettyId&quot;:&quot;iddadimensao&quot;,&quot;assignedMetadataField&quot;:&quot;TQT_MEDIDA&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[],&quot;dateAttributes&quot;:[],&quot;simpleFacts&quot;:[],&quot;dateFacts&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;unassigneddateFacts&quot;:[],&quot;entitiesWithoutValue&quot;:[]}}" enabled="enabled" guiName="Medida" guiX="428" guiY="95" id="MEDIDA" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+</Phase>
+</Graph>

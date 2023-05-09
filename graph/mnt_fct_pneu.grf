@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628779362824" licenseType="Commercial" modified="Tue Mar 29 10:34:09 BRT 2022" modifiedBy="Usuário" name="mnt_fct_pneu" revision="1.41" showComponentDetails="true">
+<Global>
+<Metadata id="Metadata0" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," name="Pneu" previewAttachmentCharset="ISO-8859-1" recordDelimiter="\r\n" type="delimited">
+<Field delimiter="," name="TL_LOCAL" type="number"/>
+<Field delimiter="," name="TL_CUSTO" type="number"/>
+<Field delimiter="," name="TQS_KMR1" type="number"/>
+<Field delimiter="," name="TQS_KMR2" type="number"/>
+<Field delimiter="," name="TQS_KMR3" type="number"/>
+<Field delimiter="," name="TQS_KMR4" type="number"/>
+<Field delimiter="," name="TQS_KMR5" type="number"/>
+<Field delimiter="," name="TQS_KMR6" type="number"/>
+<Field delimiter="," name="TQS_KMR7" type="number"/>
+<Field name="B1_COD" type="string"/>
+<Field name="TQT_MEDIDA" type="string"/>
+<Field name="T9_CODBEM" type="string"/>
+<Field name="T7_FABRICA" type="string"/>
+<Field name="TQR_DESMOD" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="A2_COD" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata1" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field label="TJ_FILIAL" name="TJ_FILIAL" type="string"/>
+<Field label="TZ_ORDEM" name="TZ_ORDEM" type="string"/>
+<Field label="TZ_CODBEM" name="TZ_CODBEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field label="TQS_KMOR" name="TQS_KMOR" type="number"/>
+<Field label="TQS_KMR1" name="TQS_KMR1" type="number"/>
+<Field label="TQS_KMR2" name="TQS_KMR2" type="number"/>
+<Field label="TQS_KMR3" name="TQS_KMR3" type="number"/>
+<Field label="TQS_KMR4" name="TQS_KMR4" type="number"/>
+<Field label="TQS_KMR5" name="TQS_KMR5" type="number"/>
+<Field label="TQS_KMR6" name="TQS_KMR6" type="number"/>
+<Field label="TQS_KMR7" name="TQS_KMR7" type="number"/>
+<Field name="TIPO_PNEU" type="string"/>
+<Field label="T9_CODBEM" name="T9_CODBEM" type="string"/>
+<Field format="yyyyMMdd" label="TZ_DATAMOV" name="TZ_DATAMOV" type="date"/>
+<Field label="TZ_TIPOMOV" name="TZ_TIPOMOV" type="string"/>
+<Field label="TZ_BEMPAI" name="TZ_BEMPAI" type="string"/>
+<Field label="TZ_HORAENT" name="TZ_HORAENT" type="string"/>
+<Field label="TZ_HORASAI" name="TZ_HORASAI" type="string"/>
+<Field format="yyyyMMdd" label="TZ_DATASAI" name="TZ_DATASAI" type="date"/>
+<Field label="TZ_POSCONT" name="TZ_POSCONT" type="number"/>
+<Field label="TZ_CONTSAI" name="TZ_CONTSAI" type="number"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field label="T9_VALCPA" name="T9_VALCPA" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata2" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TZ_CODBEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field name="TQS_KMOR" type="number"/>
+<Field name="TQS_KMR1" type="number"/>
+<Field name="TQS_KMR2" type="number"/>
+<Field name="TQS_KMR3" type="number"/>
+<Field name="TQS_KMR4" type="number"/>
+<Field name="TQS_KMR5" type="number"/>
+<Field name="TQS_KMR6" type="number"/>
+<Field name="TQS_KMR7" type="number"/>
+<Field name="TIPO_PNEU" type="string"/>
+<Field name="T9_CODBEM" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATAMOV" type="date"/>
+<Field name="TZ_TIPOMOV" type="string"/>
+<Field name="TZ_BEMPAI" type="string"/>
+<Field name="TZ_HORAENT" type="string"/>
+<Field name="TZ_HORASAI" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATASAI" type="date"/>
+<Field name="TZ_POSCONT" type="number"/>
+<Field name="TZ_CONTSAI" type="number"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field eofAsDelimiter="false" name="T9_VALCPA" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata3" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TZ_CODBEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field name="T4_NOME" type="string"/>
+<Field name="TQS_KMOR" type="number"/>
+<Field name="TQS_KMR1" type="number"/>
+<Field name="TQS_KMR2" type="number"/>
+<Field name="TQS_KMR3" type="number"/>
+<Field name="TQS_KMR4" type="number"/>
+<Field name="TQS_KMR5" type="number"/>
+<Field name="TQS_KMR6" type="number"/>
+<Field name="TQS_KMR7" type="number"/>
+<Field name="TIPO_PNEU" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATAMOV" type="date"/>
+<Field name="TZ_TIPOMOV" type="string"/>
+<Field name="TZ_BEMPAI" type="string"/>
+<Field name="TZ_HORAENT" type="string"/>
+<Field name="TZ_HORASAI" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATASAI" type="date"/>
+<Field name="TZ_POSCONT" type="number"/>
+<Field name="TZ_CONTSAI" type="number"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field eofAsDelimiter="false" name="T9_VALCPA" type="number"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata4" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field name="TR8_LOTE" type="string"/>
+<Field name="T9_CODBEM" type="string"/>
+<Field name="T4_NOME" type="string"/>
+<Field name="TZ_POSCONT" type="number"/>
+<Field name="TZ_CONTSAI" type="number"/>
+<Field format="yyyyMMdd" name="TZ_DATAMOV" type="date"/>
+<Field format="yyyyMMdd" name="TZ_DATASAI" type="date"/>
+<Field name="TZ_TIPOMOV" type="string"/>
+<Field name="TZ_HORAENT" type="string"/>
+<Field name="TZ_HORASAI" type="string"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field name="T9_VALCPA" type="number"/>
+<Field format="yyyyMMdd" name="T9_DTCOMPR" type="date"/>
+<Field name="TQS_KMOR" type="number"/>
+<Field name="TQS_KMR1" type="number"/>
+<Field name="TQS_KMR2" type="number"/>
+<Field name="TQS_KMR3" type="number"/>
+<Field name="TQS_KMR4" type="number"/>
+<Field name="TQS_KMR5" type="number"/>
+<Field name="TQS_KMR6" type="number"/>
+<Field name="TQS_KMR7" type="number"/>
+<Field eofAsDelimiter="false" name="TIPO_PNEU" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata5" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field name="TR8_LOTE" type="string"/>
+<Field name="T9_CODBEM" type="string"/>
+<Field name="TZ_BEMPAI" type="string"/>
+<Field name="T4_NOME" type="string"/>
+<Field name="TZ_POSCONT" type="string"/>
+<Field name="TZ_CONTSAI" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATAMOV" type="date"/>
+<Field format="yyyyMMdd" name="TZ_DATASAI" type="date"/>
+<Field name="TZ_TIPOMOV" type="string"/>
+<Field name="TZ_HORAENT" type="string"/>
+<Field name="TZ_HORASAI" type="string"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field name="T9_VALCPA" type="number"/>
+<Field name="TQS_KMOR" type="number"/>
+<Field name="TQS_KMR1" type="number"/>
+<Field name="TQS_KMR2" type="number"/>
+<Field name="TQS_KMR3" type="number"/>
+<Field name="TQS_KMR4" type="number"/>
+<Field name="TQS_KMR5" type="number"/>
+<Field name="TQS_KMR6" type="number"/>
+<Field name="TQS_KMR7" type="number"/>
+<Field eofAsDelimiter="false" name="TIPO_PNEU" type="string"/>
+</Record>
+</Metadata>
+<Metadata id="Metadata6" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1">
+<Record fieldDelimiter="," label="pneu.csv" name="pneu_csv" previewAttachment="${DATA_SOURCE_DIR}/pneu.csv" previewAttachmentCharset="ISO-8859-1" quoteChar="&quot;" quotedStrings="true" recordDelimiter="\n" skipSourceRows="1" type="delimited">
+<Field name="TJ_FILIAL" type="string"/>
+<Field name="TZ_ORDEM" type="string"/>
+<Field name="TJ_ORDEM" type="string"/>
+<Field name="TR8_LOTE" type="string"/>
+<Field name="T9_CODBEM" type="string"/>
+<Field name="TZ_BEMPAI" type="string"/>
+<Field name="T4_NOME" type="string"/>
+<Field name="TZ_POSCONT" type="string"/>
+<Field name="TZ_CONTSAI" type="string"/>
+<Field format="yyyyMMdd" name="TZ_DATAMOV" type="date"/>
+<Field format="yyyyMMdd" name="TZ_DATASAI" type="date"/>
+<Field name="TZ_TIPOMOV" type="string"/>
+<Field name="TZ_HORAENT" type="string"/>
+<Field name="TZ_HORASAI" type="string"/>
+<Field name="TQT_DESMED" type="string"/>
+<Field name="TJ_CUSTTER" type="number"/>
+<Field name="T9_VALCPA" type="number"/>
+<Field format="yyyyMMdd" name="T9_DTCOMPR" type="date"/>
+<Field name="B1_UPRC" type="number"/>
+<Field name="TQS_KMOR" type="number"/>
+<Field name="TQS_KMR1" type="number"/>
+<Field name="TQS_KMR2" type="number"/>
+<Field name="TQS_KMR3" type="number"/>
+<Field name="TQS_KMR4" type="number"/>
+<Field name="TQS_KMR5" type="number"/>
+<Field name="TQS_KMR6" type="number"/>
+<Field name="TQS_KMR7" type="number"/>
+<Field name="kmTOT" type="number"/>
+<Field eofAsDelimiter="false" name="TIPO_PNEU" type="string"/>
+</Record>
+</Metadata>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" fileURL="zip:(${DATA_SOURCE_DIR}/${gdc_agent_zip})#pneu.csv*" guiName="Pneu" guiX="121" guiY="95" id="PNEU" type="DATA_READER"/>
+<Node dataset="dataset.pneus" datasetFieldMappings="{&quot;gd_dataset&quot;:{&quot;datasetId&quot;:&quot;dataset.pneus&quot;,&quot;datasetTitle&quot;:&quot;Movimentação do pneu&quot;,&quot;attributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.dmiensaodopneu&quot;,&quot;title&quot;:&quot;Dimensão do pneu&quot;,&quot;prettyId&quot;:&quot;attr_pneus_dmiensaodopneu&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.dmiensaodopneu&quot;,&quot;title&quot;:&quot;Dimensão do pneu&quot;,&quot;prettyId&quot;:&quot;dmiensaodopneu&quot;,&quot;assignedMetadataField&quot;:&quot;TQT_DESMED&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.ferro&quot;,&quot;title&quot;:&quot;Ferro&quot;,&quot;prettyId&quot;:&quot;attr_pneus_ferro&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.ferro&quot;,&quot;title&quot;:&quot;Ferro&quot;,&quot;prettyId&quot;:&quot;ferro&quot;,&quot;assignedMetadataField&quot;:&quot;T9_CODBEM&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.horaentrada&quot;,&quot;title&quot;:&quot;Hora entrada&quot;,&quot;prettyId&quot;:&quot;attr_pneus_horaentrada&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.horaentrada&quot;,&quot;title&quot;:&quot;Hora entrada&quot;,&quot;prettyId&quot;:&quot;horaentrada&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_HORAENT&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.horasaida&quot;,&quot;title&quot;:&quot;Hora saída&quot;,&quot;prettyId&quot;:&quot;attr_pneus_horasaida&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.horasaida&quot;,&quot;title&quot;:&quot;Hora saída&quot;,&quot;prettyId&quot;:&quot;horasaida&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_HORASAI&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.local&quot;,&quot;title&quot;:&quot;ID movimento&quot;,&quot;prettyId&quot;:&quot;attr_pneus_local&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.local&quot;,&quot;title&quot;:&quot;ID movimento&quot;,&quot;prettyId&quot;:&quot;local&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_ORDEM&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.lotedeservico&quot;,&quot;title&quot;:&quot;Lote de serviço&quot;,&quot;prettyId&quot;:&quot;attr_pneus_lotedeservico&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.lotedeservico&quot;,&quot;title&quot;:&quot;Lote de serviço&quot;,&quot;prettyId&quot;:&quot;lotedeservico&quot;,&quot;assignedMetadataField&quot;:&quot;TR8_LOTE&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.servico&quot;,&quot;title&quot;:&quot;Serviço&quot;,&quot;prettyId&quot;:&quot;attr_pneus_servico&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.servico&quot;,&quot;title&quot;:&quot;Serviço&quot;,&quot;prettyId&quot;:&quot;servico&quot;,&quot;assignedMetadataField&quot;:&quot;T4_NOME&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.tipomovimento&quot;,&quot;title&quot;:&quot;Tipo movimento&quot;,&quot;prettyId&quot;:&quot;attr_pneus_tipomovimento&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.tipomovimento&quot;,&quot;title&quot;:&quot;Tipo movimento&quot;,&quot;prettyId&quot;:&quot;tipomovimento&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_TIPOMOV&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.pneus.tipopneu&quot;,&quot;title&quot;:&quot;Tipo pneu&quot;,&quot;prettyId&quot;:&quot;attr_pneus_tipopneu&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.pneus.tipopneu&quot;,&quot;title&quot;:&quot;Tipo pneu&quot;,&quot;prettyId&quot;:&quot;tipopneu&quot;,&quot;assignedMetadataField&quot;:&quot;TIPO_PNEU&quot;,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;assignedMetadataField&quot;:null,&quot;selectedDisplayForm&quot;:null}}],&quot;referencedAttributes&quot;:[{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.bem.iddobem&quot;,&quot;title&quot;:&quot;ID do bem&quot;,&quot;prettyId&quot;:&quot;attr_bem_iddobem&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.bem.iddobem&quot;,&quot;title&quot;:&quot;ID do bem&quot;,&quot;prettyId&quot;:&quot;bem__iddobem&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;TZ_BEMPAI&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.bem.iddobem&quot;,&quot;title&quot;:&quot;ID do bem&quot;,&quot;prettyId&quot;:&quot;bem__iddobem&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.filial.codigodafilial&quot;,&quot;title&quot;:&quot;ID da filial&quot;,&quot;prettyId&quot;:&quot;attr_filial_codigodafilial&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.filial.codigodafilial&quot;,&quot;title&quot;:&quot;ID da filial&quot;,&quot;prettyId&quot;:&quot;filial__codigodafilial&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;TJ_FILIAL&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.filial.codigodafilial&quot;,&quot;title&quot;:&quot;ID da filial&quot;,&quot;prettyId&quot;:&quot;filial__codigodafilial&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}}},{&quot;gd_dataset_attribute&quot;:{&quot;id&quot;:&quot;attr.os.iddaos&quot;,&quot;title&quot;:&quot;ID da OS&quot;,&quot;prettyId&quot;:&quot;attr_os_iddaos&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.os.iddaos&quot;,&quot;title&quot;:&quot;ID da OS&quot;,&quot;prettyId&quot;:&quot;os__iddaos&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}],&quot;assignedMetadataField&quot;:&quot;TJ_ORDEM&quot;,&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;label.os.iddaos&quot;,&quot;title&quot;:&quot;ID da OS&quot;,&quot;prettyId&quot;:&quot;os__iddaos&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:false}}}}],&quot;dateAttributes&quot;:[{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;data.date&quot;,&quot;title&quot;:&quot;Date (Data)&quot;,&quot;prettyId&quot;:&quot;data&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_DATAMOV&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;data.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data)&quot;,&quot;prettyId&quot;:&quot;data_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;data.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data)&quot;,&quot;prettyId&quot;:&quot;data_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}},{&quot;gd_dataset_date_attribute&quot;:{&quot;id&quot;:&quot;datasaida.date&quot;,&quot;title&quot;:&quot;Date (Data saída)&quot;,&quot;prettyId&quot;:&quot;datasaida&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_DATASAI&quot;,&quot;displayForms&quot;:[{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;datasaida.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data saída)&quot;,&quot;prettyId&quot;:&quot;datasaida_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}}],&quot;selectedDisplayForm&quot;:{&quot;gd_dataset_attribute_display_form&quot;:{&quot;id&quot;:&quot;datasaida.date.day.yyyy_mm_dd&quot;,&quot;title&quot;:&quot;yyyy-mm-dd (Data saída)&quot;,&quot;prettyId&quot;:&quot;datasaida_date_day_yyyy_mm_dd&quot;,&quot;assignedMetadataField&quot;:null,&quot;type&quot;:&quot;STRING&quot;,&quot;referenceKey&quot;:true}},&quot;associatedFact&quot;:null}}],&quot;simpleFacts&quot;:[{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.contadorentrada&quot;,&quot;title&quot;:&quot;Contador entrada&quot;,&quot;prettyId&quot;:&quot;contadorentrada&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_POSCONT&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.contadorsaida&quot;,&quot;title&quot;:&quot;Contador saída&quot;,&quot;prettyId&quot;:&quot;contadorsaida&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TZ_CONTSAI&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.custo&quot;,&quot;title&quot;:&quot;Custo serviço&quot;,&quot;prettyId&quot;:&quot;custo&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TJ_CUSTTER&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.kmtotal&quot;,&quot;title&quot;:&quot;km total&quot;,&quot;prettyId&quot;:&quot;kmtotal&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;kmTOT&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km&quot;,&quot;title&quot;:&quot;km1&quot;,&quot;prettyId&quot;:&quot;km&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR1&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km2&quot;,&quot;title&quot;:&quot;km2&quot;,&quot;prettyId&quot;:&quot;km2&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR2&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km3&quot;,&quot;title&quot;:&quot;km3&quot;,&quot;prettyId&quot;:&quot;km3&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR3&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km4&quot;,&quot;title&quot;:&quot;km4&quot;,&quot;prettyId&quot;:&quot;km4&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR4&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km5&quot;,&quot;title&quot;:&quot;km5&quot;,&quot;prettyId&quot;:&quot;km5&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR5&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km6&quot;,&quot;title&quot;:&quot;km6&quot;,&quot;prettyId&quot;:&quot;km6&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR6&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.km7&quot;,&quot;title&quot;:&quot;km7&quot;,&quot;prettyId&quot;:&quot;km7&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMR7&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.kmor&quot;,&quot;title&quot;:&quot;kmor&quot;,&quot;prettyId&quot;:&quot;kmor&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;TQS_KMOR&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.precodopneu&quot;,&quot;title&quot;:&quot;Preço do pneu&quot;,&quot;prettyId&quot;:&quot;precodopneu&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;T9_VALCPA&quot;}},{&quot;gd_dataset_fact&quot;:{&quot;id&quot;:&quot;fact.pneus.valorunitariodoitem&quot;,&quot;title&quot;:&quot;Valor unitário do item&quot;,&quot;prettyId&quot;:&quot;valorunitariodoitem&quot;,&quot;type&quot;:&quot;DECIMAL&quot;,&quot;assignedMetadataField&quot;:&quot;B1_UPRC&quot;}}],&quot;dateFacts&quot;:[],&quot;datesWithFactConflict&quot;:[],&quot;entitiesWithoutValue&quot;:[],&quot;entitiesWithoutMetadata&quot;:[],&quot;fieldsWithMetadataConflict&quot;:[],&quot;unassigneddateFacts&quot;:[]}}" enabled="enabled" guiName="Pneu" guiX="578" guiY="95" id="PNEU1" retriesInterval="60" retriesNumber="5" type="GD_DATASET_WRITER"/>
+<Edge debugMode="true" fromNode="PNEU:0" guiBendpoints="" guiRouter="Manhattan" id="Edge1" inPort="Port 0 (in)" metadata="Metadata6" outPort="Port 0 (output)" toNode="PNEU1:0"/>
+</Phase>
+</Graph>

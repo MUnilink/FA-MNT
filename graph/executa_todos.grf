@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628682938093" licenseType="Commercial" modified="Fri Apr 29 10:15:09 BRT 2022" modifiedBy="Usuário" name="roda_todos" revision="1.125" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="242" id="Note0" textColorB="0" textColorG="0" textColorR="0" textFontSize="8" title="Geral" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="10" width="191" x="81" y="112">
+<attr name="text"><![CDATA[Roda os grafos que referenciam vários conjuntos de dados. Pode referenciar qualquer tabela de qualquer sistema.]]></attr>
+</Note>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="501" id="Note2" textColorB="0" textColorG="0" textColorR="0" textFontSize="8" title="Manutenção" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="10" width="551" x="346" y="25">
+<attr name="text"><![CDATA[Roda os grafos que referenciam os subgrafos da Manutenção.
+xxx_x: pode referenciar qualquer tabela do sistema xxx]]></attr>
+</Note>
+<Note alignment="1" backgroundColorB="225" backgroundColorG="255" backgroundColorR="255" enabled="true" folded="false" height="286" id="Note1" textColorB="0" textColorG="0" textColorR="0" textFontSize="8" title="Ativo fixo" titleColorB="0" titleColorG="0" titleColorR="0" titleFontSize="10" width="191" x="81" y="370">
+<attr name="text"><![CDATA[Roda os grafos com os custos do ativo fixo. Em 27/09/21 não há integração ativo e manutenção, mas quando houver, será possível relacionar a aquisição e a depreciação aos outros custos da manutenção.]]></attr>
+</Note>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node baseURL="https://${USER_PWD_SECURE_DI}@secure-di.gooddata.com/project-uploads/${GDC_PROJECT_ID}/today-3/${gdc_agent_zip}" destination="${DATA_SOURCE_DIR}" enabled="enabled" guiName="File Download" guiX="113" guiY="25" id="FILE_DOWNLOAD" type="FILE_DOWNLOAD"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/xfilial.grf" guiName="Filial" guiX="748" guiY="46" id="FILIAL" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/geral.grf" guiName="Roda geral" guiX="113" guiY="226" id="RODA_GERAL" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="2">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_combustivel.grf" guiName="Combustível" guiX="621" guiY="318" id="COMBUSTIVEL" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_documentos.grf" guiName="Documentos e taxas" guiX="356" guiY="318" id="DOCUMENTOS_E_TAXAS" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_geral.grf" guiName="Geral manutenção" guiX="362" guiY="134" id="GERAL_MANUTENCAO" type="RUN_GRAPH"/>
+<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_aquisdeprec.grf" guiName="Roda custos ativo" guiX="113" guiY="534" id="RODA_CUSTOS_ATIVO" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="8">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_pneu.grf" guiName="Pneu" guiX="748" guiY="410" id="PNEU" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="16">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/roda_manutencao.grf" guiName="Manutenção" guiX="494" guiY="226" id="MANUTENCAO" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

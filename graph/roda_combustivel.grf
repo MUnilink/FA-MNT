@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628617789842" licenseType="Commercial" modified="Tue Oct 19 10:46:34 BRST 2021" modifiedBy="Usuário" name="executa" revision="1.9" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_fct_combustivel.grf" guiName="Dim combustível" guiX="309" guiY="152" id="DIM_COMBUSTIVEL" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_dim_combustivel.grf" guiName="Fato combustível" guiX="436" guiY="244" id="FATO_COMBUSTIVEL" type="RUN_GRAPH"/>
+</Phase>
+</Graph>

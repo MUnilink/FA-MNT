@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><Graph author="Usuário" created="Tue Aug 10 08:16:41 BRT 2021" guiVersion="3.4.4.P" id="1628617789842" licenseType="Commercial" modified="Mon Aug 16 13:17:02 BRT 2021" modifiedBy="Usuário" name="executa" revision="1.7" showComponentDetails="true">
+<Global>
+<Property fileURL="workspace.prm" id="GraphParameter0"/>
+<Dictionary/>
+</Global>
+<Phase number="0">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_dim_manutencao.grf" guiName="Roda dim manutenção" guiX="212" guiY="115" id="RODA_DIM_MANUTENCAO" type="RUN_GRAPH"/>
+</Phase>
+<Phase number="1">
+<Node enabled="enabled" graphName="${GRAPH_DIR}/mnt_fct_manutencao.grf" guiName="Roda fct manutenção" guiX="365" guiY="207" id="RODA_FCT_MANUTENCAO" type="RUN_GRAPH"/>
+</Phase>
+</Graph>
